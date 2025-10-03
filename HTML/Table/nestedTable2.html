@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="">
+        <tr>
+            <th>Header Column1</th>
+            <th>Header Column2</th>
+            <th>Header Column3</th>
+            <th>Header Column4</th>
+        </tr>
+        <tr>
+           <td>Row 2 - Item 1</td>
+           <td>Row 2 - Item 2</td>
+           <td rowspan="2"><b>Row 2 Nested Table 1</b> <br><br>
+            
+            <!-- Nested Table -->
+             <table border="">
+                <tr>
+                    <th>Row 1 Header</th>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <th>Row 2 Header</th>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <th>Row 3 Header</th>
+                    <td>item</td>
+                </tr>
+             </table>
+            
+        </td>
+           <td>Row 2 - Item 4 <br> A Second Line</td>
+        </tr>
+        <tr>
+            <td>
+                <b>Row 3 Nested Table 2</b>
+                <br><br>
+                <table border="">
+                    <tr>
+                        <th>Row 1 Header</th>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <th>Row 2 Header</th>
+                        <td>item</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+              <ul>
+                <li>Data 1</li>
+                <li>Data 2</li>
+                <li>Data 3</li>
+              </ul>
+            </td>
+            
+            <td rowspan="2">
+                <img src="https://media.cheggcdn.com/media/05d/05d9d3fe-5f46-4fd0-bd6a-739131f15f71/phpHtGP6R" alt="" width="130px">
+            </td>
+        </tr>
+        <tr>
+            <td>Row 4 - Item 1</td>
+            <td>Row 4 - Item 2</td>
+            <td>Row 4 - Item 3</td>
+        </tr>
+        <tr>
+            <td colspan="4">Row 5 - Last Row of the Outer Table</td>
+        </tr>
+    </table>
+</body>
+</html>

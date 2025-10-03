@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(10, 7, 7);
+        }
+        input{
+            padding: 10px 20px;
+            color: rgb(34, 32, 32);
+            background-color: lightgreen;
+            border: none;
+            border-radius: 5px;
+            font-family: cursive;
+        }
+        form{
+            color: darkolivegreen;
+            font-family: cursive;
+            font-size: 24px;
+            text-align: center;
+        }
+        input[type="button"]{
+            padding: 5px 10px;
+            color: darkblue;
+            font-family: monospace;
+            background-color: lightcoral;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        ::placeholder{
+            color: black;
+        }
+        div{
+            color: darkolivegreen;
+            font-family: cursive;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        First Name : <input type="text" name="fname" placeholder="Enter Your First Name" id="fname" required>
+        <br><br>
+        Last Name : <input type="text" name="lname" placeholder="Enter Your Last Name" id="lname" required>
+        <br><br>
+        <input type="button" onclick="collectData()" value="Collect Data">
+    </form>
+
+    <div>
+        <h2>First Name :</h2>
+    </div>
+    <script src="DOM5.js"></script>
+</body>
+</html>
+<!-- 
+Type Writter 
+-->
+
+
+
+<!-- 
+First Name : Zafar 
+Last Name :  Shabhai
+Gender : Male
+Age : 1
+Contact No : 1234567890
+
+
+-->

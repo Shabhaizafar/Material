@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            transform: translateX(0px);
+            /* transition: all 2s; */
+            /* transition-property: all; */
+            /* transition-property: background-color; */
+            /* transition-duration: 2s; */
+            /* transition-delay: 5s; */
+            /* transition: all 2s 5s; */
+
+        }
+        div:hover{
+            /* transition: all 2s; */
+            transition: all 2s 5s;
+            transform: translateX(100px);
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div></div> 
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form autocomplete="on">
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <textarea id="address" name="Address" cols="40" rows="5" placeholder="Enter your address"></textarea>
+        <br><br>
+
+        <!-- First Name -->
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="FIRST_NAME" placeholder="Enter your Name">
+        <br><br>
+
+        <!-- File Upload -->
+        <label for="file-upload">Upload File:</label>
+        <input type="file" id="file-upload" name="File" accept="image/jpeg" multiple>
+        <br><br>
+
+        <!-- Country -->
+        <label for="country">Country:</label>
+        <select id="country" name="Country" multiple>
+            <option value="" disabled>Select Country(s)</option>
+            <option value="india">INDIA</option>
+            <option value="nz">NZ</option>
+        </select>
+        <br><br>
+
+        <!-- Favorite Location -->
+        <label for="location">Favorite Location:</label>
+        <select id="location" name="Country/State">
+            <optgroup label="Country">
+                <option value="india">INDIA</option>
+                <option value="nz">NZ</option>
+            </optgroup>
+            <optgroup label="State">
+                <option value="Guj">Gujarat</option>
+                <option value="Mumbai">Mumbai</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <!-- Choose Country -->
+        <label for="country-list">Choose Country:</label>
+        <input type="text" id="country-list" name="Country" list="mylist">
+        <datalist id="mylist">
+            <option value="india">
+            <option value="nz">
+            <option value="uk">
+            <option value="usa">
+            <option value="uae">
+            <option value="can">
+            <option value="aus">
+        </datalist>
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Sign up">
+    </form>
+</body>
+</html>

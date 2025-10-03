@@ -1,0 +1,248 @@
+/* Universal Selector : reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    background-color: lightsteelblue;
+    font-family: calibri;
+}
+header{
+    padding: 0px 10%;
+}
+.nav1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px;
+}
+.nav2{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon1,.icon2,.icon3,.icon4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;   
+    border-radius: 50%;
+}
+
+.logo{
+    flex-basis: 230px;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-image: url("https://templatemo.com/templates/templatemo_406_flex/images/logo.png");
+    background-repeat: no-repeat;
+    font-size: 32px;
+    color: #ec523f;
+}
+.menu{
+    flex-grow: 1;
+    display: flex;
+    justify-content: right;
+    align-items: start;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    padding-right: 30px;
+}
+ul li{
+    padding-top: 40px;
+    cursor: pointer;
+    border-top: 3px solid transparent;
+}
+.active{
+    border-top: 3px solid #ec523f;
+}
+ul li:hover{
+    color: #ec523f;
+}
+
+
+/*  */
+.home{
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+.home-txt{
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin: auto;
+    position: absolute;
+    bottom: 15%;
+    
+}
+.home img{
+    filter: brightness(70%);
+}
+.home-txt a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #ec523f;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+.home-txt h2{
+    width: fit-content;
+    margin: auto;
+    font-size: 42px;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+.home-txt p{
+    font-size: 20px;
+    padding: 15px 0px;
+}
+main{
+    position: absolute;
+    top: 650px;
+    width: 100%;
+}
+.service{
+    padding: 100px 7%;
+    background-color: white;
+}
+.service .about-blck{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+.about-blck div{
+    width:20%;
+    text-align: center;
+    padding: 25px;
+    height: 250px;
+    color: white;
+}
+
+.ab-txt1{
+    background-color: lightcoral;
+}
+.ab-txt2{
+    background-color: lightgreen;
+}
+.ab-txt3{
+    background-color: lightslategrey;
+}
+.ab-txt4{
+    background-color: lightsalmon;
+}
+.about-blck div h4{
+    font-size: 24px;
+    border-bottom: 1px solid ;
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 8px;
+    display: none;
+}
+.about-blck div p{
+    padding-top: 10px;
+    display: none;
+}
+.about-blck div:hover h4{
+    display: block;
+}
+.about-blck div:hover p{
+    display: block;
+}
+.about-cntnt{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about-cntnt h3{
+    width: fit-content;
+    margin: auto;
+    font-size: 32px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid black;
+}
+.about-cntnt p{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
+
+/* 30/07 */
+.portfolio{     /*.service copy*/
+    padding: 100px 7%;
+    background-color: white;
+}
+
+.portfolio .portfolio-blck{     /*.service .service-blck copy*/
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+
+    /* changes */
+    flex-wrap: wrap;
+}
+.portfolio-blck aside{     /*.service div copy*/
+    width:20%;
+    text-align: center;
+    padding: 25px;
+    height: 250px;
+
+    /* changes */
+    background-image: url("https://templatemo.com/templates/templatemo_406_flex/images/slide2.jpg");
+    background-size: 100% 100%;
+}
+
+.portfolio-cntnt{     /*.service-cntnt copy*/
+    text-align: center;
+    margin-bottom: 50px;
+}
+.portfolio-cntnt h3{    /*.service-cntnt h3 copy*/
+    width: fit-content;
+    margin: auto;
+    font-size: 32px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid black;
+}
+.portfolio-cntnt p{     /*.service-cntnt p copy*/
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.portfolio-blck aside h4{     /*.service-blck div h4 copy*/
+    font-size: 24px;
+    border-bottom: 1px solid ;
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 8px;
+    color: white;   /*changes*/
+    display: none;
+}
+.portfolio-blck aside p{  /*.service-blck div p copy*/
+    padding-top: 10px;
+    color: white;
+    display: none;
+}
+
+/* New */
+.portfolio-blck aside:hover{
+    background-image: url("");
+    background-color: #ec523f;
+}
+.portfolio-blck aside:hover h4{
+    display: block;
+}
+.portfolio-blck aside:hover p{
+    display: block;
+}
+
+
